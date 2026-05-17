@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wpf_wiki · Email</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7f3;
+      --panel: #ffffff;
+      --text: #20211f;
+      --muted: #666a62;
+      --line: #d8dbd2;
+      --accent: #226f54;
+      --soft: #edf4ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151615;
+        --panel: #20211f;
+        --text: #f3f1ea;
+        --muted: #aaa79f;
+        --line: #393a36;
+        --accent: #73bc94;
+        --soft: #243229;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-end;
+      margin-bottom: 18px;
+    }
+    h1 { margin: 0 0 4px; font-size: 30px; letter-spacing: 0; }
+    h2 { margin: 18px 0 8px; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 14px 0 6px; font-size: 15px; letter-spacing: 0; }
+    p { margin: 0 0 12px; color: var(--muted); }
+    a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    code {
+      background: var(--soft);
+      border-radius: 4px;
+      padding: 2px 5px;
+      word-break: break-word;
+    }
+    .notice {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px 15px;
+      margin-bottom: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 15px;
+      overflow-wrap: anywhere;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+    .markdown h1 { font-size: 21px; margin-top: 0; }
+    .markdown ul { margin: 0 0 12px; padding-left: 20px; }
+    .markdown li { margin: 5px 0; }
+    footer { color: var(--muted); margin-top: 18px; }
+    @media (max-width: 780px) {
+      header, .grid { display: block; }
+      .card { margin-bottom: 14px; }
+      main { padding: 20px 12px 36px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    
+        <header>
+          <div>
+            <h1>Email</h1>
+            <p>Read-only secure rollup.</p>
+          </div>
+          <a href="index.html">Back</a>
+        </header>
+        <section class="notice">
+          This page is generated from <code>secure_sync/email_rollup.md</code> and should contain only sync-safe summaries.
+        </section>
+        <section class="card markdown"><h1>Secure Email Rollup: 2026-05-17</h1>
+<p>This file is safe for cross-device Git sync. It excludes subjects, senders, recipients, bodies, and raw source links.</p>
+<h2>Provider Counts</h2>
+<ul>
+<li><code>gmail</code>: 75</li>
+<li><code>outlook</code>: 505</li>
+</ul>
+<h2>Signal Counts</h2>
+<ul>
+<li><code>gmail</code> / <code>low</code>: 70</li>
+<li><code>gmail</code> / <code>medium</code>: 5</li>
+<li><code>outlook</code> / <code>low</code>: 501</li>
+<li><code>outlook</code> / <code>medium</code>: 4</li>
+</ul>
+<h2>Mailbox Class Counts</h2>
+<ul>
+<li><code>gmail</code> / <code>inbox</code>: 74</li>
+<li><code>gmail</code> / <code>unknown</code>: 1</li>
+<li><code>outlook</code> / <code>inbox</code>: 90</li>
+<li><code>outlook</code> / <code>other_folder</code>: 396</li>
+<li><code>outlook</code> / <code>spam</code>: 13</li>
+<li><code>outlook</code> / <code>trash</code>: 1</li>
+<li><code>outlook</code> / <code>unknown</code>: 5</li>
+</ul>
+<h2>Provider Flag Counts</h2>
+<ul>
+<li><code>gmail</code> / <code>important</code>: 5</li>
+<li><code>outlook</code> / <code>flagged</code>: 4</li>
+<li><code>outlook</code> / <code>has_attachments</code>: 15</li>
+<li><code>outlook</code> / <code>spam</code>: 13</li>
+<li><code>outlook</code> / <code>trash</code>: 1</li>
+</ul>
+<h2>Privacy</h2>
+<ul>
+<li>Email subjects, senders, recipients, message bodies, custom label names, category names, and raw source IDs are intentionally excluded.</li>
+<li>Treat email sync as a signal layer first; promote durable knowledge only after explicit review.</li>
+</ul></section>
+        
+  </main>
+</body>
+</html>
