@@ -236,17 +236,12 @@ h3 {
   text-align: center;
 }
 
-.visitor-map-fallback {
+.visitor-map-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: #1772d0;
   font-size: 14px;
-  text-decoration: none;
-}
-
-.visitor-map-fallback:hover {
-  text-decoration: underline;
 }
 
 .visitor-globe {
