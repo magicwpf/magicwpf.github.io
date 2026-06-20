@@ -236,6 +236,25 @@ h3 {
   text-align: center;
 }
 
+.visitor-map-fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1772d0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.visitor-map-fallback:hover {
+  text-decoration: underline;
+}
+
+.visitor-globe {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+}
+
 .site-footer {
   padding-top: 18px;
   text-align: center;

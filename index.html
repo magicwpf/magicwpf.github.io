@@ -324,7 +324,11 @@
       </section>
 
       <div class="visitor-map">
-        <script type="text/javascript" id="clustrmaps" src="https://clustrmaps.com/map_v2.js?d=Qrp-1F9Vo7H0jFH9JaTZhEx82Rc19YnstXvYFbjvwXQ&amp;cl=ffffff&amp;w=200&amp;h=150"></script>
+        <a class="visitor-map-fallback" href="https://clustrmaps.com/" title="Visitor map" aria-label="Visitor map">
+          <span class="visitor-globe" aria-hidden="true">🌍</span>
+          <span>Visitor map</span>
+        </a>
+        <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?d=Qrp-1F9Vo7H0jFH9JaTZhEx82Rc19YnstXvYFbjvwXQ&amp;cl=ffffff&amp;w=200" onload="document.querySelector('.visitor-map-fallback').hidden = true" onerror="this.onerror=null;this.src='https://clustrmaps.com/map_v2.js?d=Qrp-1F9Vo7H0jFH9JaTZhEx82Rc19YnstXvYFbjvwXQ&amp;cl=ffffff&amp;w=200&amp;h=150'"></script>
       </div>
 
       <footer class="site-footer">
